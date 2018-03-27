@@ -8,8 +8,8 @@ export default class LoginComponent extends Component {
 
     render() {
         return (         
-            <ImageBackground source={require('../../../resource/login-background.jpg')} resizeMode='stretch' style={[styles.stretch,styles.center]}>               
-                <Image source={require('../../../resource/logo.png')} style={styles.logo}/>
+            <ImageBackground source={require('../../../resource/images/login-background.jpg')} resizeMode='stretch' style={[styles.stretch,styles.center]}>               
+                <Image source={require('../../../resource/images/logo.png')} style={styles.logo}/>
                 <TextInput placeholder='请输入您的用户名' style={styles.input}/>
                 <TextInput placeholder='请输入您的密码' secureTextEntry={true} style={styles.input}/>
                 <TouchableOpacity style={[styles.btn,styles.center]} onPress={this.props.onLogin}>
